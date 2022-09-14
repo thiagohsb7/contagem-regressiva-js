@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contagem Regressiva</title>
+    <style>
+      * {
+        background-color: black;
+      }
+
+      div {
+        text-align: center;
+      }
+      h1 {
+        font-size: 2rem;
+        color: white;
+      }
+
+      h2 {
+        font-size: 3rem;
+        color: white;
+      }
+      .start {
+        background-color: green;
+        color: white;
+        height: 3rem;
+        width: 8rem;
+        margin: 1.5rem;
+        border-radius: 0.5rem;
+        cursor: pointer;
+      }
+
+      .stop {
+        background-color: red;
+        color: white;
+        height: 3rem;
+        width: 8rem;
+        margin: 1.5rem;
+        border-radius: 0.5rem;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Contagem Regressiva</h1>
+      <h2 id="tempo">60</h2>
+      <button onclick="ativarContagem()" class="start">Ativar Contagem</button>
+      <button onclick="pararContagem()"class="stop">Parar Contagem</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
